@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.xvkang.dao.SysUserMapper">
+
+	<select id="selectByUserCode" resultType="cn.xvkang.pojo.SysUser" parameterType="java.lang.String" >
+		select
+		*
+
+		from sys_user where usercode=#{userCode}
+
+
+
+	</select>
+
+</mapper>
